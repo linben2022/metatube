@@ -1,6 +1,6 @@
 export default {
   async fetch(request, env) {
-    const url = new URL(request.url);
+const url = new URL(request.url);
 
 	// 从请求路径中提取目标 URL
 	let actualUrlStr = url.pathname.replace("/", "");
@@ -229,4 +229,5 @@ export default {
 			status: 500
 		});
 	}
-}
+  },
+};
